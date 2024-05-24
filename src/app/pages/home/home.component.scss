@@ -1,0 +1,73 @@
+.home-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px auto;
+
+  width: 60%;
+  height: 100%;
+}
+
+.home-container .title-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.home-container .title-container label {
+  color: var(--light-gray);
+  position: absolute;
+  top: -10px;
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: var(--dark-gray);
+  padding: 0 4px;
+}
+
+.home-container .title-container input {
+  border: 1px solid var(--light-gray);
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 10px;
+  width: 100%;
+  color: var(--white);
+}
+
+.home-container .title-container h1 {
+  font-family: "Creepster";
+  color: var(--blue);
+  -webkit-text-stroke: 1px var(--green);
+  font-size: 48px;
+}
+
+.home-container .placeholder {
+  background-color: var(--dark);
+  border-radius: 10px;
+  border: 1px solid var(--medium-gray);
+  width: 100%;
+  height: 511px;
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container .placeholder h2 {
+  color: var(--white);
+}
+
+.home-container .placeholder p {
+  color: var(--light-gray);
+}
+
+.home-container .card-wrapper {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}

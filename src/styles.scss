@@ -3,6 +3,7 @@
   --white: #ffffff;
   --dark-gray: #1f1f1f;
   --light-gray: #a4a4a4;
+  --medium-gray: #3d3d3d;
   --blue: #00b5cc;
   --green: #b2df28;
 }
@@ -18,5 +19,12 @@ a {
   text-decoration: none;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+  background-color: var(--dark-gray);
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
