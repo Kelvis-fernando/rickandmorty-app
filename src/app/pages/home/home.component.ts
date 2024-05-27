@@ -10,11 +10,11 @@ import { HomeService } from 'src/app/services/home.service';
 export class HomeComponent implements OnInit {
   constructor(private homeService: HomeService) {}
 
-  character?: CharacterList;
+  characters?: CharacterList;
 
   ngOnInit(): void {
     this.homeService.getAll().subscribe((data) => {
-      this.character = data;
+      this.characters = data;
     });
   }
 }

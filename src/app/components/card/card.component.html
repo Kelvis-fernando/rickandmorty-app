@@ -1,11 +1,8 @@
 <div class="card">
   <span class="favorite"><mat-icon class="icon">favorite</mat-icon></span>
-  <img
-    src="https://static.wikia.nocookie.net/rickandmorty/images/3/3f/Young_Adult_Rick.png/revision/latest?cb=20230316221017"
-    alt=""
-  />
+  <img [src]="character && character.image" />
   <div class="card-content">
-    <h1>Rick Sanchez</h1>
-    <p>Human</p>
+    <h1>{{ character && character.name }}</h1>
+    <p>{{ character && character.species }}</p>
   </div>
 </div>
