@@ -7,14 +7,12 @@
     </div>
   </div>
 
-  <!-- <div class="placeholder">
+  <div *ngIf="character && character.results.length < 1" class="placeholder">
     <h2>Nada foi encontrado</h2>
     <p>Tente realizar uma nova busca.</p>
-  </div> -->
+  </div>
 
   <div class="card-wrapper">
-    <app-card></app-card>
-    <app-card></app-card>
     <app-card></app-card>
   </div>
 </div>
