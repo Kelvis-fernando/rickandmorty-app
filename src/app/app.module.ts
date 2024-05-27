@@ -9,8 +9,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
 import { CardComponent } from './components/card/card.component';
+import { FavoritesComponent } from './pages/favorites/favorites.component';
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, CardComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, CardComponent, FavoritesComponent],
   imports: [BrowserModule, AppRoutingModule, MatIconModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
