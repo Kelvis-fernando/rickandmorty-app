@@ -1,0 +1,31 @@
+.favorites-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px auto;
+
+  width: 60%;
+  height: 100%;
+}
+
+.favorites-container .title-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.favorites-container h1 {
+  font-family: "Creepster";
+  color: var(--blue);
+  -webkit-text-stroke: 1px var(--green);
+  font-size: 48px;
+}
+
+.favorites-container .card-wrapper {
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+}
