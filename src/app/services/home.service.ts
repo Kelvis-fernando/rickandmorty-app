@@ -14,4 +14,8 @@ export class HomeService {
   getAll(): Observable<CharacterList> {
     return this.http.get<CharacterList>(this.url);
   }
+
+  searchCharacterList(name: string): Observable<CharacterList> {
+    return this.http.get<CharacterList>(`${this.url}?name=${name}`);
+  }
 }

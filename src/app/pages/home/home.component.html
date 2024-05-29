@@ -3,7 +3,12 @@
     <h1>Inicio</h1>
     <div>
       <label for="search">Pesquisar</label>
-      <input type="text" name="search" placeholder="Procure um personagem" />
+      <input
+        (input)="searchCharacter($event)"
+        type="text"
+        name="search"
+        placeholder="Procure um personagem"
+      />
     </div>
   </div>
 
